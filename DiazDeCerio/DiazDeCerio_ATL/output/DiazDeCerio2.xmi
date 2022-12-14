@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<closedPolygonsMM:FigureCollection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:closedPolygonsMM="http://www.example.org/closedPolygons2022MM">
+  <figures xsi:type="closedPolygonsMM:Regular" isStable="true" name="B1" sides="3.0">
+    <segments name="(0,0)-(3,4)">
+      <anchor name="(0,0)"/>
+      <vector i="3.0" j="4.0" name="(3,4)"/>
+    </segments>
+    <segments name="(3,4)-(0,4)">
+      <anchor x="3.0" y="4.0" name="(3,4)"/>
+      <vector i="-3.0" name="(-3,0)"/>
+    </segments>
+    <segments name="(0,4)-(0,0)">
+      <anchor y="4.0" name="(0,4)"/>
+      <vector j="-4.0" name="(0,-4)"/>
+    </segments>
+  </figures>
+  <figures xsi:type="closedPolygonsMM:Regular" isStable="true" name="B2" sides="3.0">
+    <segments name="(0,0)-(4,0)">
+      <anchor name="(0,0)"/>
+      <vector i="4.0" name="(4,0)"/>
+    </segments>
+    <segments name="(4,0)-(4,3)">
+      <anchor x="4.0" name="(4,0)"/>
+      <vector j="3.0" name="(0,3)"/>
+    </segments>
+    <segments name="(4,3)-(0,0)">
+      <anchor x="4.0" y="3.0" name="(4,3)"/>
+      <vector i="-4.0" j="-3.0" name="(-4,-3)"/>
+    </segments>
+  </figures>
+  <figures xsi:type="closedPolygonsMM:Regular" name="B3" sides="4.0">
+    <segments name="(4,3)-(5,4)">
+      <anchor x="4.0" y="3.0" name="(4,3)"/>
+      <vector i="1.0" j="1.0" name="(1,1)"/>
+    </segments>
+    <segments name="(5,4)-(4,5)">
+      <anchor x="5.0" y="4.0" name="(5,4)"/>
+      <vector i="-1.0" j="1.0" name="(-1,1)"/>
+    </segments>
+    <segments name="(4,5)-(3,4)">
+      <anchor x="4.0" y="5.0" name="(4,5)"/>
+      <vector i="-1.0" j="-1.0" name="(-1,-1)"/>
+    </segments>
+    <segments name="(3,4)-(4,3)">
+      <anchor x="3.0" y="4.0" name="(3,4)"/>
+      <vector i="1.0" j="-1.0" name="(1,-1)"/>
+    </segments>
+  </figures>
+</closedPolygonsMM:FigureCollection>

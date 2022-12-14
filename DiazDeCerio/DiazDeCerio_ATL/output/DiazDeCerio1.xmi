@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<closedPolygonsMM:FigureCollection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:closedPolygonsMM="http://www.example.org/closedPolygons2022MM">
+  <figures xsi:type="closedPolygonsMM:Regular" isStable="true" name="A2" sides="3.0">
+    <segments name="(0,3)-(3,3)">
+      <anchor y="3.0" name="(0,3)"/>
+      <vector i="3.0" name="(3,0)"/>
+    </segments>
+    <segments name="(3,3)-(0,7)">
+      <anchor x="3.0" y="3.0" name="(3,3)"/>
+      <vector i="-3.0" j="4.0" name="(-3,4)"/>
+    </segments>
+    <segments name="(0,7)-(0,3)">
+      <anchor y="7.0" name="(0,7)"/>
+      <vector j="-4.0" name="(0,-4)"/>
+    </segments>
+  </figures>
+  <figures xsi:type="closedPolygonsMM:Regular" isStable="true" name="A5" sides="4.0">
+    <segments name="(0,0)-(2,0)">
+      <anchor name="(0,0)"/>
+      <vector i="2.0" name="(2,0)"/>
+    </segments>
+    <segments name="(2,0)-(2,2)">
+      <anchor x="2.0" name="(2,0)"/>
+      <vector j="2.0" name="(0,2)"/>
+    </segments>
+    <segments name="(2,2)-(0,2)">
+      <anchor x="2.0" y="2.0" name="(2,2)"/>
+      <vector i="-2.0" name="(-2,0)"/>
+    </segments>
+    <segments name="(0,2)-(0,0)">
+      <anchor y="2.0" name="(0,2)"/>
+      <vector j="-2.0" name="(0,-2)"/>
+    </segments>
+  </figures>
+  <figures xsi:type="closedPolygonsMM:Regular" isStable="true" name="A6" sides="4.0">
+    <segments name="(3,0)-(5,0)">
+      <anchor x="3.0" name="(3,0)"/>
+      <vector i="2.0" name="(2,0)"/>
+    </segments>
+    <segments name="(5,0)-(5,4)">
+      <anchor x="5.0" name="(5,0)"/>
+      <vector j="4.0" name="(0,4)"/>
+    </segments>
+    <segments name="(5,4)-(3,4)">
+      <anchor x="5.0" y="4.0" name="(5,4)"/>
+      <vector i="-2.0" name="(-2,0)"/>
+    </segments>
+    <segments name="(3,4)-(3,0)">
+      <anchor x="3.0" y="4.0" name="(3,4)"/>
+      <vector j="-4.0" name="(0,-4)"/>
+    </segments>
+  </figures>
+  <figures xsi:type="closedPolygonsMM:Regular" isStable="true" name="A7" sides="4.0">
+    <segments name="(6,0)-(9,0)">
+      <anchor x="6.0" name="(6,0)"/>
+      <vector i="3.0" name="(3,0)"/>
+    </segments>
+    <segments name="(9,0)-(9,2)">
+      <anchor x="9.0" name="(9,0)"/>
+      <vector j="2.0" name="(0,2)"/>
+    </segments>
+    <segments name="(9,2)-(6,2)">
+      <anchor x="9.0" y="2.0" name="(9,2)"/>
+      <vector i="-3.0" name="(-3,0)"/>
+    </segments>
+    <segments name="(6,2)-(6,0)">
+      <anchor x="6.0" y="2.0" name="(6,2)"/>
+      <vector j="-2.0" name="(0,-2)"/>
+    </segments>
+  </figures>
+  <figures xsi:type="closedPolygonsMM:Irregular" isStable="true" name="A4" sides="1.0">
+    <segments name="(6,6)-(9,6)">
+      <anchor x="6.0" y="6.0" name="(6,6)"/>
+      <vector i="3.0" name="(3,0)"/>
+    </segments>
+  </figures>
+  <figures xsi:type="closedPolygonsMM:Irregular" isStable="true" name="A3" sides="1.0">
+    <segments name="(3,6)-(5,6)">
+      <anchor x="3.0" y="6.0" name="(3,6)"/>
+      <vector i="2.0" name="(2,0)"/>
+    </segments>
+    <segments name="(5,6)-(5,4)">
+      <anchor x="5.0" y="6.0" name="(5,6)"/>
+      <vector j="-2.0" name="(0,-2)"/>
+    </segments>
+  </figures>
+  <figures xsi:type="closedPolygonsMM:Regular" name="A1" sides="4.0">
+    <segments name="(1,11)-(4,7)">
+      <anchor x="1.0" y="11.0" name="(1,11)"/>
+      <vector i="3.0" j="-4.0" name="(3,-4)"/>
+    </segments>
+    <segments name="(4,7)-(7,11)">
+      <anchor x="4.0" y="7.0" name="(4,7)"/>
+      <vector i="3.0" j="4.0" name="(3,4)"/>
+    </segments>
+    <segments name="(7,11)-(4,25)">
+      <anchor x="7.0" y="11.0" name="(7,11)"/>
+      <vector i="-3.0" j="14.0" name="(-3,14)"/>
+    </segments>
+    <segments name="(4,25)-(1,11)">
+      <anchor x="4.0" y="25.0" name="(4,25)"/>
+      <vector i="-3.0" j="-14.0" name="(-3,-14)"/>
+    </segments>
+  </figures>
+</closedPolygonsMM:FigureCollection>

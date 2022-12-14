@@ -1,0 +1,83 @@
+-- @path MM1=/PolygonsMM/model/polygonsMM.ecore
+-- @path MM2=/ClosedPolygonsMM/model/closedPolygonsMM.ecore
+
+module DiazDeCerio;
+create OUT : MM2 from IN : MM1;
+
+rule polygonList2FigureCollection {
+	from
+		s : MM1!PolygonList
+	to 
+		t : MM2!FigureCollection (
+			figures <- s.polygons
+		)
+}
+
+
+rule Triangle2Regular {
+	from
+		s : MM1!Triangle	 
+	to 
+		t : MM2!Regular (
+			name <- s.name,
+			sides <- 3,
+			isStable <- s.segments->exists(m|m.y1 = m.y2),
+			segments <- s.segments
+		)
+}
+
+rule Quadrilateral2Regular {
+	from
+		s : MM1!Quadrilateral	 
+	to 
+		t : MM2!Regular (
+			name <- s.name,
+			sides <- 4,
+			isStable <- s.segments->exists(m|m.y1 = m.y2),
+			segments <- s.segments
+		)
+}
+
+rule Pentagon2Regular {
+	from
+		s : MM1!Pentagon
+	to 
+		t : MM2!Regular (
+			name <- s.name,
+			sides <- 5,
+			isStable <- s.segments->exists(m|m.y1 = m.y2),
+			segments <- s.segments
+		)
+}
+rule Other2Irregular {
+	from
+		s : MM1!Other
+	to 
+		t : MM2!Irregular (
+			name <- s.name,
+			sides <- 1,
+			isStable <- s.segments->exists(m|m.y1 = m.y2),
+			segments <- s.segments
+		)
+}
+
+rule Segment2Segment {
+	from
+		s : MM1!Segment
+	to 
+		t : MM2!Segment (
+			name <- '('.concat(s.x1.toString()).concat(',').concat(s.y1.toString()).concat(')').concat('-').concat('('.concat(s.x2.toString()).concat(',').concat(s.y2.toString()).concat(')')), 
+			anchor <- p,
+			vector <- v
+		),
+		p :MM2!Point(
+			name <- '('.concat(s.x1.toString()).concat(',').concat(s.y1.toString()).concat(')'),
+			x <- s.x1,
+			y <- s.y1
+		),
+		v : MM2!Vector(
+			i <- s.x2-s.x1,
+			j <- s.y2-s.y1,
+			name <- '('.concat((s.x2-s.x1).toString()).concat(',').concat((s.y2-s.y1).toString()).concat(')')
+		)
+}
